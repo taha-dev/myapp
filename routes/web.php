@@ -18,3 +18,4 @@ Auth::routes();
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/find', 'UserController@findfriends')->middleware('auth');
 Route::get('/showuser/{id}', 'UserController@showuser')->middleware('auth');
+Route::get('/status/{id}', 'FriendController@getstatus');
